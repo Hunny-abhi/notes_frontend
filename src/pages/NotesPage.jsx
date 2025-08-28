@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { fetchNotes, createNote, updateNote, deleteNote } from "../api/notes";
-import NoteForm from "../components/NoteForm";
 import NoteCard from "../components/NoteCard";
 import SearchBar from "../components/SearchBar";
 import { AnimatePresence, motion } from "framer-motion";
@@ -24,11 +23,6 @@ export default function NotesPage() {
     loadNotes();
   }, []);
 
-  const handleCreate = async (note) => {
-    await createNote(note);
-    loadNotes();
-  };
-
   const handleUpdate = async (id, note) => {
     await updateNote(id, note);
     loadNotes();
@@ -47,13 +41,13 @@ export default function NotesPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-300 py-8 px-4">
+    <div className="min-h-screen bg-blue-50 py-8 px-4">
       <div className="max-w-2xl mx-auto space-y-6">
         <h1 className="text-5xl font-bold text-center text-gray-800">
           Notes App
         </h1>
 
-        <NoteForm onSubmit={handleCreate} />
+        {/* Removed NoteForm here */}
 
         <SearchBar query={query} setQuery={setQuery} />
 

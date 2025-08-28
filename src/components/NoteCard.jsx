@@ -41,9 +41,9 @@ export default function NoteCard({ note, onUpdate, onDelete }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.9 }}
       layout
-      className="max-w-md mx-auto my-4 p-6 bg-gray-300 rounded-lg shadow-lg border border-gray-100"
+      className="max-w-md mx-auto my-4 p-6 bg-white rounded-lg shadow-lg border border-gray-100"
     >
       <h3 className="text-xl font-semibold text-gray-800">{note.title}</h3>
       <p className="text-sm text-gray-500 mb-2">By {note.name}</p>
