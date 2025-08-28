@@ -13,7 +13,7 @@ export default function About() {
         About This App
       </h2>
       <p className="text-gray-600 text-lg">
-        NoteKeeper is a simple note-taking app built with React, Tailwind CSS,
+        NoteSaver is a simple note-taking app built with React, Tailwind CSS,
         and Framer Motion. It allows you to create, edit, delete, and search
         notes seamlessly.
       </p>
