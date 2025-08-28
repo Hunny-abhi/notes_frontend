@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 
 export default function NoteForm({ onSubmit, initialData, onCancel }) {
   const [form, setForm] = useState({ title: "", content: "", name: "" });
@@ -44,7 +45,7 @@ export default function NoteForm({ onSubmit, initialData, onCancel }) {
         value={form.content}
         onChange={handleChange}
         required
-        rows="6"
+        rows="5"
         className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
       />
       <div className="flex justify-end space-x-3">

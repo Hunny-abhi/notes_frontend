@@ -47,8 +47,6 @@ export default function NotesPage() {
           Notes App
         </h1>
 
-        {/* Removed NoteForm here */}
-
         <SearchBar query={query} setQuery={setQuery} />
 
         {loading ? (
