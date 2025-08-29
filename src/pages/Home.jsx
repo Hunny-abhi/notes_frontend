@@ -9,7 +9,7 @@ export default function Home() {
   const handleCreate = async (note) => {
     await createNote(note);
     setSuccess(true);
-    setTimeout(() => setSuccess(false), 3000);
+    setTimeout(() => setSuccess(false), 5000);
   };
 
   return (
